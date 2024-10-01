@@ -19,12 +19,18 @@
   - along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<template>
-	<div class="setup-confirmation">
-		<p class="setup-confirmation__secret">
-			{{ t('twofactor_totp', 'Your new TOTP secret is:') }} {{ secret }}
-		</p>
-		<p>
+  <template>
+    <div class="setup-confirmation">
+        <p class="setup-confirmation__secret">
+            {{ t('twofactor_totp', 'Your new TOTP secret is:') }} {{ secret }}
+        </p>
+        <p>
+            Download a 2FA Authenticator App on your phone: <br>
+            <a href="https://apps.apple.com/us/app/microsoft-authenticator/id983156458">Apple App Store (iPhone) </a><br>
+            <a href="https://play.google.com/store/apps/details?id=com.azure.authenticator">Google Play Store (Android) </a>
+        </p>
+            <p> Want to learn more? Information about <a href="https://liu.se/en/organisation/liu/uf/digit/two-step-verification">Two-Factor Authentication at Linköping University.</a></p>
+        <p>
 			{{
 				t(
 					'twofactor_totp',

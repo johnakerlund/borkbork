@@ -80,7 +80,7 @@ class TotpProvider implements IProvider, IProvidesIcons, IProvidesPersonalSettin
 	 * Get the display name for selecting the 2FA provider
 	 */
 	public function getDisplayName(): string {
-		return 'TOTP (Authenticator app)';
+		return 'Two-Factor Authentication (2FA Authenticator app)';
 	}
 
 	/**
